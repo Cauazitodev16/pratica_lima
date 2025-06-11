@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos gerais */
+  body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-color: #1e1e1e;
+    color: rgb(0, 98, 246);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha tudo ao topo */
+    text-align: top left;
+  }
+  
+  /* Tela de Área de Trabalho */
+  .desktop-screen {
+    position: relative;
+    background-image: url('images/windows11-wallpaper.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    color: rgb(0, 0, 0); 
+  }
+  
+  
+  /* Posiciona os ícones no canto superior esquerdo */
+.desktop-icons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .icon {
+    text-align: center;
+    width: 80px; 
+    height: 100px; 
+    cursor: pointer;
+  }
+  
+  .desktop-icon {
+    width: 64px; 
+    height: 64px; 
+    margin-bottom: 10px; 
+    transition: transform 0.3s ease;
+  }
+  
+  .desktop-icon:hover {
+    transform: scale(1.1); /* Efeito de hover */
+  }
+  
+  .icon p {
+    font-size: 14px;
+    color: #000000;
+    margin-top: 5px; /* Espaçamento entre ícone e nome */
+  }
+  
+  /* Barra de Tarefas */
+  .barra-tarefas {
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Alinhado à esquerda */
+    width: 100%; /* Barra ocupa toda a largura */
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    padding-left: 10px; /* Espaçamento da borda esquerda */
+  }
+  
+  .apps {
+    display: flex;
+    gap: 20px;
+    align-items: top left;
+  }
+  
+  .windows-logo {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .app-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .app-icon:hover {
+    transform: scale(1.1); /* Efeito de hover */
+  }
